@@ -1,0 +1,5 @@
+*.iso
+*.dd
+*.vmdk
+.vscode
+.history
