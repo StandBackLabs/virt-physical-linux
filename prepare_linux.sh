@@ -48,8 +48,8 @@ sudo mount -t vfat -o loop efi.dd /mnt/efitmp
 sudo rm -rf /mnt/efitmp/'System Volume Information'
 sudo rm -rf /mnt/efitmp/EFI/Microsoft
 
-# Find and update virtual grub.cfg to skip menu
-sudo find /mnt/efitmp/EFI -name grub.cfg -exec sed -i '1 i\GRUB_TIMEOUT=0' {}
+# DID NOT WORK - SKIPPING Find and update virtual grub.cfg to skip menu
+# sudo find /mnt/efitmp/EFI -name grub.cfg -exec sed -i '1 i\GRUB_TIMEOUT=0' {}
 
 # Unmount, cleanup
 sudo umount /mnt/efitmp
